@@ -1,1 +1,7 @@
-# Water-Leakage-Detection-System
+# Water Leakage Detection System
+
+Water is a precious resource and ensuring its safe delivery is of utmost importance. In this project, we have developed an IoT-based solution to detect water leakage and ensure water quality in pipelines. To emulate a real-world scenario, we have built a miniature water pipeline model with different types of pipes. Our IoT device consists of a YF-S20L water flow sensor and a TDS water quality sensor, both attached to an Arduino Uno for data collection and power supply. The water flow rate data collected by the Arduino is sent to an ESP8266 NodeMCU along with the pipe type, diameter, and device ID in the form of a JSON object. This data is then sent to Azure Cloud for storage and analysis.
+
+To process and analyze the data, we are using the Bi-LSTM machine learning model. The processed data is evaluated by the model to determine if there is a leakage or not in that particular area. Water quality is also determined using the same process. The final data is then displayed on our website, hosted on Replit with Python Flask. The website shows a map of the pipeline with green and red points indicating areas with no leakage or possible leakage, respectively.
+
+Our solution provides an efficient and effective way of detecting water leakage and ensuring water quality in pipelines. It has the potential to be scaled up and implemented in real-world scenarios, leading to significant improvements in water management and conservation efforts. 
